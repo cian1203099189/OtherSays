@@ -1,0 +1,21 @@
+name: OtherSays
+main: PluginMain.MainInMain
+version: 1.1
+api-version: 1.17
+commands:
+  othersay:
+    aliases:
+      - "oths"
+      - "os"
+    usage: "/othersay <player-name> <SaysThing>"
+    description: "use other say sth."
+    permission: "minecraft.command.kill"
+    permission-message: "Only op can do that!"
+  otherlisten:
+    aliases:
+      - "othl"
+      - "ol"
+    usage: "/otherListen <player-name> <ListenThing>"
+    description: "sb. Listen sth."
+    permission: "minecraft.command.kill"
+    permission-message: "only op can do that!"
