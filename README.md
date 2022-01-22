@@ -1,0 +1,2 @@
+# OtherSays
+a spigot plugin
