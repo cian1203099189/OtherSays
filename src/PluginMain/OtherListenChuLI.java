@@ -1,5 +1,6 @@
 package PluginMain;
 
+import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -21,11 +22,17 @@ public class OtherListenChuLI implements org.bukkit.command.CommandExecutor{
             return true;
         }
         String message = strings[1];
-        for (int i = 2;i< strings.length-1;i++) {
-            message = message + " "+ strings[i];
+        for (int i = 1;i< strings.length-1;i++) {
+            message = message + " "+ strings[i+1];
         }
-        player.sendMessage(message);
-        return true;
+        if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
+            String tmessage = PlaceholderAPI.setPlaceholders(player, message);
+            player.sendMessage(tmessage);
+            return true;
+        } else {
+            player.sendMessage(message);
+            return true;
+        }
     }
 }
 

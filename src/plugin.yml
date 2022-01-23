@@ -15,7 +15,14 @@ commands:
     aliases:
       - "othl"
       - "ol"
-    usage: "/otherListen <player-name> <ListenThing>"
+    usage: "/otherListen <player-name or uuid> <ListenThing>"
     description: "sb. Listen sth."
     permission: "minecraft.command.kill"
     permission-message: "only op can do that!"
+  othertool:
+    aliases:
+      - "otool"
+    usage: "/othertool"
+    description: "give you a get uuid tool"
+    permission: "minecraft.command.kill"
+    permission-message: "Only op can do that!"
