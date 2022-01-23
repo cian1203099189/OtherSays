@@ -11,6 +11,6 @@ how to use:
 
 /otherlisten (player-name) (you want to send Message)
 
-Use some player say something & Send message to sb.
+/othertool
 
 permission: not all,only op can use.
